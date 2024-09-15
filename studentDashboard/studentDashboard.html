@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - UNIvoice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Left Side Panel -->
+    <div class="side-panel">
+        <!-- Logo at the top center of the left panel -->
+        <a href="../homepage/homepage.html" id="logo-link">
+            <img src="../univoiceBg.png" alt="UNIvoice Logo" id="logo">
+        </a>
+        <!-- Center aligned "Booking Progress" text -->
+        <h3 class="center-text">Booking Progress</h3>
+        <ul id="progress-steps">
+            <li id="step1" class="step">Step 1: College Selection</li>
+            <li id="step2" class="step">Step 2: Slot Booking</li>
+            <li id="step3" class="step">Step 3: Slot Confirmation</li>
+            <li id="step4" class="step">Step 4: Payment Confirmation</li>
+            <li id="step5" class="step">Step 5: Booking Confirmation</li>
+        </ul>
+    </div>
+
+    <!-- Top Panel -->
+    <div class="top-panel">
+        <div class="greeting">Hello Student</div>
+        <div class="avatar">
+            <img src="Images/Avatar.webp" alt="Avatar">
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <h2>Our Colleges:</h2>
+        <div class="college-grid">
+            <button onclick="selectCollege('College 1')">College 1</button>
+            <button onclick="selectCollege('College 2')">College 2</button>
+            <button onclick="selectCollege('College 3')">College 3</button>
+            <button onclick="selectCollege('College 4')">College 4</button>
+            <button onclick="selectCollege('College 5')">College 5</button>
+            <button onclick="selectCollege('College 6')">College 6</button>
+            <button onclick="selectCollege('College 7')">College 7</button>
+            <button onclick="selectCollege('College 8')">College 8</button>
+            <button onclick="selectCollege('College 9')">College 9</button>
+        </div>
+        <div id="confirm-section" style="display: none; margin-top: 20px;">
+            <button id="confirm-btn" onclick="confirmCollege()">Confirm Selection</button>
+        </div>
+
+        <div id="datetime-section" style="display: none; margin-top: 40px;">
+            <h3>Schedule Your Meeting:</h3>
+            <label for="meeting-date">Select Date:</label>
+            <input type="date" id="meeting-date" name="meeting-date" required>
+            <label for="meeting-time">Select Time:</label>
+            <input type="time" id="meeting-time" name="meeting-time" required>
+            <button onclick="scheduleMeeting()">Schedule Meeting</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,184 @@
+/* Logo and Booking Progress Styling */
+#logo-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px; /* Add some space below the logo */
+}
+
+#logo {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+}
+
+.center-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Existing styles below */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+}
+
+.side-panel {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center; /* Center align content within the panel */
+}
+
+.top-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.greeting {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.main-content {
+    margin-top: 60px;
+    margin-left: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: calc(100% - 200px);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.college-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.college-grid button {
+    padding: 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.college-grid button:hover {
+    background-color: #0056b3;
+}
+
+#confirm-section {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+#confirm-btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#confirm-btn:hover {
+    background-color: #138496;
+}
+
+#datetime-section h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+#datetime-section label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#datetime-section input {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#datetime-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#datetime-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the progress steps */
+#progress-steps {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#progress-steps li {
+    margin-bottom: 40px; /* Increased margin to create more space between items */
+    padding: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+#progress-steps li.checked {
+    background-color: #28a745;
+}
+
+#progress-steps li.checked::before {
+    content: '✔';
+    margin-right: 10px;
+    font-weight: bold;
+}

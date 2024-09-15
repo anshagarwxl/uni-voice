@@ -1,0 +1,202 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu Button */
+.menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+/* Floating Panel */
+
+#floating-panel {
+    position: fixed;
+    left: -250px; /* Initially hidden */
+    transition: left 0.3s ease;
+}
+
+#moreContent {
+    display: none; /* Initially hidden */
+}
+
+.floating-panel {
+    position: absolute;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 60px;
+    transition: 0.3s;
+}
+
+.floating-panel a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.floating-panel a:hover {
+    background-color: #575757;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+header h1 {
+    font-size: 80px; /* Increase font size from 48px to 60px or higher */
+    margin: 0;
+    padding-bottom: 1px;
+    border-bottom: 0.1px solid black;  /* Thin black line below the header */
+    display: inline-block;  /* Adjust line width to fit the text */
+}
+
+header .uppercase {
+    text-transform: uppercase;  /* Makes "UNI" uppercase */
+}
+
+header .small-caps {
+    font-size: 0.75em;  /* Adjusts "VOICE" to be smaller than "UNI" */
+    text-transform: uppercase;  /* Ensures "VOICE" is uppercase */
+    font-variant: small-caps;  /* Applies the small-caps effect */
+}
+
+header .punchline {
+    font-size: 24px;
+    margin-top: 5px;
+    color: #777;
+    font-style: italic; /* Ensures the text is italic */
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-images img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* UNIvoice Description Section */
+.univoice-description {
+    padding: 20px 5%;
+    background-color: #f9f9f9;
+    text-align: justify; /* Justified alignment */
+    width: 90%; /* Occupies 90% of the page width */
+    margin: 0 auto;
+    border-radius: 8px; /* Rounded corners for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.univoice-description h3 {
+    font-size: 24px; /* Smaller font size for h3 */
+    margin-bottom: 10px; /* Slightly reduce space below the heading */
+    color: #333;
+    text-align: left; /* Left-align the heading */
+    text-transform: uppercase; /* Capitalizes the heading */
+    margin-top: 0; /* Remove any top margin */
+}
+
+.univoice-description p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8; /* Increased line height for readability */
+    margin-bottom: 20px;
+}
+
+.univoice-description p[style="display: inline;"] {
+    margin-bottom: 0; /* Remove bottom margin for inline paragraphs */
+}
+
+.univoice-description #read-more-univoice,
+.univoice-description #read-more-why,
+.univoice-description #read-less-univoice,
+.univoice-description #read-less-why {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.univoice-description #read-more-univoice:hover,
+.univoice-description #read-more-why:hover,
+.univoice-description #read-less-univoice:hover,
+.univoice-description #read-less-why:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Contact Us Section */
+.contact-us {
+    background-color: black;
+    color: white;
+    padding: 20px 5%; /* Reduced top and bottom padding */
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-us h2 {
+    font-size: 24px; /* Adjust the font size if needed */
+    margin-top: 0; /* Remove top margin to reduce space */
+    margin-bottom: 20px; /* Adjust bottom margin as needed */
+    text-transform: uppercase; /* Capitalizes the heading */
+    color: #fff; /* Ensure the heading text color is white */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between; /* Spread out items evenly */
+    flex-wrap: wrap;
+    gap: 40px; /* Increase the gap between items */
+    max-width: 800px; /* Set a max width for the content */
+    margin: 0 auto; /* Center the content */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Increase the gap between icon and text */
+    flex: 1 1 30%; /* Allow the items to grow and shrink as needed */
+    min-width: 200px; /* Ensure items have a minimum width */
+}
+
+.contact-item i {
+    font-size: 24px;
+}

@@ -1,0 +1,226 @@
+/* dashboard.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+}
+
+.side-panel {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    padding: 20px 0; /* Remove left and right padding */
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Side Panel Logo */
+#side-logo-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#side-logo {
+    width: 100px; /* Adjust the size to fit well in the side panel */
+    height: auto;
+    cursor: pointer;
+    margin: 0 auto; /* Center the logo */
+}
+
+.milestones-flowchart {
+    padding: 20px;
+}
+
+.milestones-heading {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.milestone {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.milestone-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #555;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+}
+
+.milestone-circle.completed {
+    background-color: #28a745; /* Green color for completed milestones */
+}
+
+.milestone-line {
+    width: 4px;
+    height: 60px;
+    background-color: #444;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.milestone:last-child .milestone-line {
+    display: none; /* No line after the last milestone */
+}
+
+
+.top-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 200px); /* Subtract the width of the side panel */
+    margin-left: 200px; /* Offset for the side panel */
+    position: fixed;
+    top: 0;
+    left: 0; /* Ensure it starts at the very left */
+    box-sizing: border-box;
+}
+
+.greeting {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Main Content Area */
+.main-content {
+    margin-top: 60px; /* Push content down to make space for the top panel */
+    margin-left: 200px; /* Offset for the side panel */
+    padding: 20px;
+    box-sizing: border-box;
+    width: calc(100% - 200px); /* Adjust for side panel width */
+    display: flex;
+    gap: 20px; /* Space between the two halves */
+}
+
+/* Left Panel */
+.left-panel {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Meeting Card Design */
+.meeting-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.meeting-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.meeting-details h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #007bff;
+}
+
+.meeting-details p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* Right Panel */
+.right-panel {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Notification Card Design */
+.notification-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.notification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.notification-details h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #ff6f61;
+}
+
+.notification-details p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Accept Button Styling */
+.accept-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.accept-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Headings */
+.left-panel h2,
+.right-panel h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
